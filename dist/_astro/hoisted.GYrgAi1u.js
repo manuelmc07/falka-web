@@ -1,0 +1,1 @@
+import"./Header.astro_astro_type_script_index_0_lang.d6V8J2CV.js";const o={threshold:.1,rootMargin:"0px 0px -50px 0px"},t=new IntersectionObserver(e=>{e.forEach(r=>{r.isIntersecting&&r.target.classList.add("animate-fade-in")})},o);document.querySelectorAll(".card").forEach(e=>{t.observe(e)});

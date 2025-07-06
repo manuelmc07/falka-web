@@ -1,0 +1,317 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Nuestra Empresa - Falka" description="Conoce la historia, misión y valores de Falka. Una marca comprometida con la creatividad y el desarrollo infantil">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-falka-blue to-falka-light-blue pt-20">
+    <div class="container-max section-padding">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-white">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-diagramm-bold mb-6">
+            Nuestra Historia
+          </h1>
+          <p class="text-xl text-blue-100 mb-8">
+            Falka nació con un sueño: crear productos escolares que no solo sean herramientas, 
+            sino que inspiren a cada niño a descubrir su potencial creativo.
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+              <img 
+                src="/images/logos/falka-isotipo-azul.png" 
+                alt="Falka Isotipo" 
+                class="w-10 h-10"
+              />
+            </div>
+            <div>
+              <p class="font-diagramm-bold text-lg">Fundada en 2024</p>
+              <p class="text-blue-100">Innovación en productos escolares</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <img 
+            src="/images/products/caja-colores.png" 
+            alt="Productos Falka" 
+            class="w-full max-w-md mx-auto transform hover:scale-105 transition-transform duration-300"
+          />
+          <div class="absolute -top-6 -right-6 w-24 h-24 bg-falka-yellow rounded-full opacity-20 animate-pulse"></div>
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-falka-orange rounded-full opacity-20 animate-pulse" style="animation-delay: 0.5s;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Nuestra Misión -->
+  <section class="section-padding bg-white">
+    <div class="container-max">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-diagramm-bold text-gray-900 mb-6">
+          Nuestra Misión
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Transformar la experiencia educativa a través de productos innovadores que despierten 
+          la creatividad, fomenten el aprendizaje y acompañen a cada niño en su desarrollo.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card text-center">
+          <div class="w-16 h-16 bg-falka-blue rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-diagramm-bold text-gray-900 mb-4">Innovación</h3>
+          <p class="text-gray-600">
+            Desarrollamos productos únicos utilizando las últimas tecnologías y materiales de alta calidad.
+          </p>
+        </div>
+        
+        <div class="card text-center">
+          <div class="w-16 h-16 bg-falka-orange rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-diagramm-bold text-gray-900 mb-4">Pasión</h3>
+          <p class="text-gray-600">
+            Cada producto está creado con amor y dedicación, pensando en el bienestar de los niños.
+          </p>
+        </div>
+        
+        <div class="card text-center">
+          <div class="w-16 h-16 bg-falka-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-diagramm-bold text-gray-900 mb-4">Creatividad</h3>
+          <p class="text-gray-600">
+            Inspiramos a los niños a explorar su imaginación y desarrollar sus habilidades artísticas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Nuestros Valores -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-max">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-diagramm-bold text-gray-900 mb-8">
+            Nuestros Valores
+          </h2>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-falka-blue rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-diagramm-bold text-gray-900 mb-2">Calidad Premium</h3>
+                <p class="text-gray-600">
+                  Utilizamos únicamente materiales de primera calidad que garantizan durabilidad y resultados excepcionales.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-falka-orange rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-diagramm-bold text-gray-900 mb-2">Enfoque en el Niño</h3>
+                <p class="text-gray-600">
+                  Cada decisión que tomamos tiene en cuenta las necesidades, seguridad y desarrollo de los niños.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-falka-yellow rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-diagramm-bold text-gray-900 mb-2">Sostenibilidad</h3>
+                <p class="text-gray-600">
+                  Nos comprometemos con prácticas responsables que cuiden el medio ambiente para las futuras generaciones.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-falka-green rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-diagramm-bold text-gray-900 mb-2">Comunidad</h3>
+                <p class="text-gray-600">
+                  Construimos relaciones sólidas con educadores, padres y distribuidores para crear un ecosistema educativo fuerte.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="grid grid-cols-2 gap-4">
+            <img 
+              src="/images/products/caja-colores.png" 
+              alt="Caja de Colores" 
+              class="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+            />
+            <img 
+              src="/images/products/caja-lapices.png" 
+              alt="Caja de Lápices" 
+              class="w-full rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 mt-8"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Compromiso con la Educación -->
+  <section class="section-padding bg-gradient-to-r from-falka-yellow to-falka-orange text-white">
+    <div class="container-max text-center">
+      <h2 class="text-3xl md:text-4xl font-diagramm-bold mb-6">
+        Compromiso con la Educación
+      </h2>
+      <p class="text-xl opacity-90 mb-8 max-w-3xl mx-auto">
+        En Falka creemos que cada niño tiene un potencial único que merece ser nutrido. 
+        Nuestros productos son más que herramientas escolares: son catalizadores de sueños.
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div class="text-center">
+          <div class="text-4xl font-diagramm-bold mb-2">100%</div>
+          <p class="opacity-90">Materiales No Tóxicos</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-diagramm-bold mb-2">24+</div>
+          <p class="opacity-90">Colores Vibrantes</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-diagramm-bold mb-2">∞</div>
+          <p class="opacity-90">Posibilidades Creativas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Equipo y Visión -->
+  <section class="section-padding bg-white">
+    <div class="container-max">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-diagramm-bold text-gray-900 mb-6">
+          Nuestra Visión
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+          Ser la marca líder en productos escolares que inspire a la próxima generación de creativos, 
+          innovadores y pensadores, presente en cada aula y hogar donde se valora la educación de calidad.
+        </p>
+      </div>
+      
+      <div class="bg-gradient-to-br from-falka-blue to-falka-light-blue rounded-2xl p-8 md:p-12 text-white">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-2xl font-diagramm-bold mb-6">El Futuro de Falka</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Expandir nuestra línea de productos con nuevas categorías</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Desarrollar tecnologías educativas innovadoras</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Crear alianzas estratégicas con instituciones educativas</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Llegar a más países y culturas</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="text-center">
+            <img 
+              src="/images/logos/falka-isotipo-blanco.png" 
+              alt="Falka Isotipo" 
+              class="w-48 h-48 mx-auto opacity-50 transform hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-max text-center">
+      <h2 class="text-3xl md:text-4xl font-diagramm-bold text-gray-900 mb-4">
+        ¿Quieres Ser Parte de Nuestra Historia?
+      </h2>
+      <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+        Únete a nosotros en esta misión de transformar la educación. 
+        Conoce nuestros productos o conviértete en distribuidor.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/productos" class="btn-primary">
+          Ver Nuestros Productos
+        </a>
+        <a href="/contacto" class="btn-secondary">
+          Contáctanos
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>
+
+<script>
+  // Animaciones al hacer scroll
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-fade-in');
+      }
+    });
+  }, observerOptions);
+  
+  // Observar elementos para animaciones
+  document.querySelectorAll('.card, .grid > div').forEach(element => {
+    observer.observe(element);
+  });
+</script> 

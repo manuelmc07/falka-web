@@ -1,0 +1,302 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Productos - Falka" description="Descubre nuestra línea completa de productos escolares premium diseñados para inspirar creatividad">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-falka-blue to-falka-light-blue pt-20">
+    <div class="container-max section-padding text-center text-white">
+      <h1 class="text-4xl md:text-5xl font-diagramm-bold mb-6">
+        Nuestros Productos
+      </h1>
+      <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+        Una línea completa de productos escolares premium diseñados para despertar la creatividad y acompañar cada momento de aprendizaje
+      </p>
+    </div>
+  </section>
+  
+  <!-- Catálogo de Productos -->
+  <section class="section-padding bg-white">
+    <div class="container-max">
+      <!-- Filtros -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <button class="filter-btn active" data-filter="all">
+          Todos los Productos
+        </button>
+        <button class="filter-btn" data-filter="colores">
+          Colores
+        </button>
+        <button class="filter-btn" data-filter="lapices">
+          Lápices
+        </button>
+        <button class="filter-btn" data-filter="accesorios">
+          Accesorios
+        </button>
+      </div>
+      
+      <!-- Grid de Productos -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="products-grid">
+        
+        <!-- Caja de Colores -->
+        <div class="product-card card" data-category="colores">
+          <div class="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-gray-50 to-gray-100 p-8">
+                         <img 
+               src="/images/products/caja-colores.png" 
+               alt="Caja de Colores Falka" 
+               class="w-full h-48 object-contain transform hover:scale-110 transition-transform duration-300"
+             />
+            <div class="absolute top-4 right-4 bg-falka-orange text-white px-3 py-1 rounded-full text-sm font-diagramm-bold">
+              Premium
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl font-diagramm-bold text-gray-900 mb-2">Caja de Colores Premium</h3>
+            <p class="text-gray-600 mb-4">
+              Set de 24 colores vibrantes con pigmentos de alta calidad. Perfectos para dar vida a cualquier proyecto artístico.
+            </p>
+            <div class="flex justify-center items-center gap-4 mb-4">
+              <span class="text-sm text-gray-500">24 Colores</span>
+              <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+              <span class="text-sm text-gray-500">Edad: 3+</span>
+            </div>
+            <div class="flex justify-center gap-2 mb-4">
+              <div class="w-4 h-4 bg-falka-red rounded-full"></div>
+              <div class="w-4 h-4 bg-falka-blue rounded-full"></div>
+              <div class="w-4 h-4 bg-falka-yellow rounded-full"></div>
+              <div class="w-4 h-4 bg-falka-green rounded-full"></div>
+              <div class="w-4 h-4 bg-falka-orange rounded-full"></div>
+              <div class="w-4 h-4 bg-falka-purple rounded-full"></div>
+              <span class="text-xs text-gray-500 ml-2">+18 más</span>
+            </div>
+            <a href="/contacto" class="btn-primary w-full">
+              Solicitar Información
+            </a>
+          </div>
+        </div>
+        
+        <!-- Caja de Lápices -->
+        <div class="product-card card" data-category="lapices">
+          <div class="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-gray-50 to-gray-100 p-8">
+                         <img 
+               src="/images/products/caja-lapices.png" 
+               alt="Caja de Lápices Falka" 
+               class="w-full h-48 object-contain transform hover:scale-110 transition-transform duration-300"
+             />
+            <div class="absolute top-4 right-4 bg-falka-blue text-white px-3 py-1 rounded-full text-sm font-diagramm-bold">
+              Profesional
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl font-diagramm-bold text-gray-900 mb-2">Caja de Lápices Profesional</h3>
+            <p class="text-gray-600 mb-4">
+              12 lápices de grafito HB de máxima calidad. Ideales para escritura diaria, dibujo técnico y bocetos.
+            </p>
+            <div class="flex justify-center items-center gap-4 mb-4">
+              <span class="text-sm text-gray-500">12 Lápices</span>
+              <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+              <span class="text-sm text-gray-500">Grafito HB</span>
+            </div>
+            <div class="flex justify-center items-center gap-4 mb-4">
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-falka-green" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-xs text-gray-600">Duradero</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-falka-green" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-xs text-gray-600">Ergonómico</span>
+              </div>
+            </div>
+            <a href="/contacto" class="btn-primary w-full">
+              Solicitar Información
+            </a>
+          </div>
+        </div>
+        
+        <!-- Producto Próximamente -->
+        <div class="product-card card" data-category="accesorios">
+          <div class="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-falka-yellow to-falka-orange p-8">
+            <div class="text-center text-white h-48 flex flex-col justify-center">
+              <svg class="w-16 h-16 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <h4 class="font-diagramm-bold text-lg">Próximamente</h4>
+              <p class="text-sm opacity-90">Nuevos productos en desarrollo</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl font-diagramm-bold text-gray-900 mb-2">Accesorios Escolares</h3>
+            <p class="text-gray-600 mb-4">
+              Borradores, sacapuntas, reglas y más accesorios esenciales para complementar tu experiencia escolar.
+            </p>
+            <div class="flex justify-center items-center gap-4 mb-4">
+              <span class="text-sm text-gray-500">Varios productos</span>
+              <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+              <span class="text-sm text-gray-500">2025</span>
+            </div>
+            <div class="mb-4">
+              <span class="bg-falka-yellow text-gray-900 px-3 py-1 rounded-full text-sm font-diagramm-bold">
+                Coming Soon
+              </span>
+            </div>
+            <a href="/contacto" class="btn-secondary w-full">
+              Solicitar Información
+            </a>
+          </div>
+        </div>
+        
+        <!-- Más productos próximamente -->
+        <div class="product-card card" data-category="colores">
+          <div class="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-gray-50 to-gray-100 p-8 border-2 border-dashed border-gray-300">
+            <div class="text-center text-gray-400 h-48 flex flex-col justify-center">
+              <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+              </svg>
+              <h4 class="font-diagramm-bold text-lg">Más Colores</h4>
+              <p class="text-sm">En desarrollo</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl font-diagramm-bold text-gray-900 mb-2">Plumones y Marcadores</h3>
+            <p class="text-gray-600 mb-4">
+              Próximamente tendremos una línea completa de plumones, marcadores y rotuladores para todos los usos.
+            </p>
+            <div class="mb-4">
+              <span class="bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-diagramm-bold">
+                En Desarrollo
+              </span>
+            </div>
+            <button class="btn-secondary w-full opacity-50 cursor-not-allowed">
+              Próximamente
+            </button>
+          </div>
+        </div>
+        
+        <div class="product-card card" data-category="lapices">
+          <div class="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-gray-50 to-gray-100 p-8 border-2 border-dashed border-gray-300">
+            <div class="text-center text-gray-400 h-48 flex flex-col justify-center">
+              <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+              </svg>
+              <h4 class="font-diagramm-bold text-lg">Lápices Especiales</h4>
+              <p class="text-sm">En desarrollo</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl font-diagramm-bold text-gray-900 mb-2">Lápices de Colores</h3>
+            <p class="text-gray-600 mb-4">
+              Una gama completa de lápices de colores para artistas exigentes. Próximamente disponibles.
+            </p>
+            <div class="mb-4">
+              <span class="bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-diagramm-bold">
+                En Desarrollo
+              </span>
+            </div>
+            <button class="btn-secondary w-full opacity-50 cursor-not-allowed">
+              Próximamente
+            </button>
+          </div>
+        </div>
+        
+        <div class="product-card card" data-category="accesorios">
+          <div class="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-gray-50 to-gray-100 p-8 border-2 border-dashed border-gray-300">
+            <div class="text-center text-gray-400 h-48 flex flex-col justify-center">
+              <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+              </svg>
+              <h4 class="font-diagramm-bold text-lg">Set Completo</h4>
+              <p class="text-sm">En desarrollo</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl font-diagramm-bold text-gray-900 mb-2">Kit Escolar Completo</h3>
+            <p class="text-gray-600 mb-4">
+              Un set completo con todos los materiales escolares esenciales. La solución perfecta para padres.
+            </p>
+            <div class="mb-4">
+              <span class="bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-diagramm-bold">
+                En Desarrollo
+              </span>
+            </div>
+            <button class="btn-secondary w-full opacity-50 cursor-not-allowed">
+              Próximamente
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="section-padding bg-gradient-to-r from-falka-blue to-falka-light-blue text-white">
+    <div class="container-max text-center">
+      <h2 class="text-3xl md:text-4xl font-diagramm-bold mb-4">
+        ¿Interesado en Nuestros Productos?
+      </h2>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        Contáctanos para obtener más información, solicitar muestras o convertirte en distribuidor
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contacto" class="btn-primary bg-falka-orange hover:bg-falka-yellow hover:text-gray-900">
+          Solicitar Catálogo
+        </a>
+        <a href="/contacto" class="btn-secondary border-white text-white hover:bg-white hover:text-falka-blue">
+          Ser Distribuidor
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>
+
+<style>
+  .filter-btn {
+    @apply px-6 py-2 rounded-full border-2 border-falka-blue text-falka-blue transition-all duration-300 hover:bg-falka-blue hover:text-white font-diagramm;
+  }
+  
+  .filter-btn.active {
+    @apply bg-falka-blue text-white;
+  }
+  
+  .product-card {
+    @apply transition-all duration-300;
+  }
+  
+  .product-card.hidden {
+    @apply opacity-0 scale-95 pointer-events-none;
+  }
+</style>
+
+<script>
+  // Filtrado de productos
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const productCards = document.querySelectorAll('.product-card');
+  
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterBtns.forEach(b => b.classList.remove('active'));
+      // Add active class to clicked button
+      btn.classList.add('active');
+      
+      const filter = btn.dataset.filter;
+      
+      productCards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script> 
